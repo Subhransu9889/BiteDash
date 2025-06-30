@@ -1,0 +1,20 @@
+@keyframes blink-twice {
+    0%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0; }
+}
+
+.blink-twice {
+    animation: blink-twice 1s ease-in-out 1; /* Runs twice and stops */
+}
+
+@keyframes slideText {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+.animate-slideText {
+    animation: slideText 5s linear 2;
+}
