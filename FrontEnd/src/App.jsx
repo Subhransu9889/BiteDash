@@ -5,6 +5,7 @@ import {Route, Routes} from "react-router-dom";
 import Home from "./pages/Home.jsx";
 import Cart from "./pages/Cart.jsx";
 import PlaceOrder from "./pages/PlaceOrder.jsx";
+import Footer from "./components/Footer.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +19,7 @@ function App() {
               <Route path='/order' element={<PlaceOrder/>}></Route>
           </Routes>
       </div>
+        <Footer/>
     </>
   )
 }

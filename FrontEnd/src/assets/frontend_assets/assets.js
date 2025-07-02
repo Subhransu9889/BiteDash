@@ -51,7 +51,7 @@ export const assets = {
 
 export const menu_list = [
     {
-        menu_name: "Cuisines",
+        menu_name: "Chinese",
         menu_image: menu_1
     },
     {
@@ -59,7 +59,7 @@ export const menu_list = [
         menu_image: menu_2
     },
     {
-        menu_name: "Deserts",
+        menu_name: "Dessert",
         menu_image: menu_3
     },
     {
@@ -71,7 +71,7 @@ export const menu_list = [
         menu_image: menu_5
     },
     {
-        menu_name: "Pure Veg",
+        menu_name: "Veg",
         menu_image: menu_6
     },
     {
@@ -274,7 +274,7 @@ export const food_list = [
         "category": "Veg"
     },
     {
-        "_id": 1,
+        "_id": 22,
         "name": "Hakka Noodles",
         "img": "https://b.zmtcdn.com/data/dish_photos/de2/1fc6387f613170faa51184697f71ade2.jpg",
         "price": 299,
@@ -283,7 +283,7 @@ export const food_list = [
         "category": "Chinese"
     },
     {
-        "_id": 22,
+        "_id": 23,
         "name": "Uttapam",
         "img": "https://b.zmtcdn.com/data/o2_assets/7ab7679bbd422b52205ba598502674291632716549.png",
         "price": 599,
@@ -292,7 +292,7 @@ export const food_list = [
         "category": "South Indian"
     },
     {
-        "_id": 23,
+        "_id": 24,
         "name": "Ras Malai",
         "img": "https://b.zmtcdn.com/data/o2_assets/6c9d314b696a88a653acaae1060790d31728889859.png",
         "price": 349,
@@ -301,7 +301,7 @@ export const food_list = [
         "category": "Dessert"
     },
     {
-        "_id": 24,
+        "_id": 25,
         "name": "Fruit Punch",
         "img": "https://b.zmtcdn.com/data/dish_photos/b0f/51ee24dad9d4e5824ccf8f5765340b0f.jpg",
         "price": 399,
@@ -310,7 +310,7 @@ export const food_list = [
         "category": "Beverage"
     },
     {
-        "_id": 25,
+        "_id": 26,
         "name": "Lamb Rogan Josh",
         "img": "https://b.zmtcdn.com/data/dish_images/fc39307e8b65002dc87b69800534f25a1613652647.png",
         "price": 649,
@@ -319,7 +319,7 @@ export const food_list = [
         "category": "Non-Veg"
     },
     {
-        "_id": 26,
+        "_id": 27,
         "name": "Vegetable Biryani",
         "img": "https://b.zmtcdn.com/data/dish_images/a098f678350380809a464fb5aaf7128a1602873799.png",
         "price": 699,
@@ -328,7 +328,7 @@ export const food_list = [
         "category": "Veg"
     },
     {
-        "_id": 27,
+        "_id": 28,
         "name": "Szechuan Noodles",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE-y7YovahGzjqVz51DlDMFJ10hV-05ItSZA&s",
         "price": 299,
@@ -337,7 +337,7 @@ export const food_list = [
         "category": "Chinese"
     },
     {
-        "_id": 28,
+        "_id": 29,
         "name": "Vada Sambar",
         "img": "https://b.zmtcdn.com/data/dish_photos/b27/46b07268c471cbe074d8b2f846278b27.jpg",
         "price": 149,
@@ -346,7 +346,7 @@ export const food_list = [
         "category": "South Indian"
     },
     {
-        "_id": 29,
+        "_id": 30,
         "name": "Cheesecake",
         "img": "https://b.zmtcdn.com/data/o2_assets/27a6de4c51a648c2d3a68c8f42ee9a571632716698.png",
         "price": 599,
@@ -355,7 +355,7 @@ export const food_list = [
         "category": "Dessert"
     },
     {
-        "_id": 30,
+        "_id": 31,
         "name": "Mint Mojito",
         "img": "https://b.zmtcdn.com/data/dish_photos/3e9/7741b030cc81ce2ed97179965c2723e9.jpg",
         "price": 349,
@@ -364,7 +364,7 @@ export const food_list = [
         "category": "Beverage"
     },
     {
-        "_id": 31,
+        "_id": 32,
         "name": "Baked Salmon",
         "img": "https://www.cubesnjuliennes.com/wp-content/uploads/2022/12/Best-Oven-Baked-Salmon-Recipe-500x500.jpg",
         "price": 599,
@@ -373,7 +373,7 @@ export const food_list = [
         "category": "Non-Veg"
     },
     {
-        "_id": 32,
+        "_id": 33,
         "name": "Mushroom Masala",
         "img": "https://b.zmtcdn.com/data/dish_photos/55f/ca79cf0de7a5056ef2c1c3e22568855f.png",
         "price": 349,
@@ -382,7 +382,7 @@ export const food_list = [
         "category": "Veg"
     },
     {
-        "_id": 33,
+        "_id": 34,
         "name": "Fried Rice",
         "img": "https://b.zmtcdn.com/data/o2_assets/e444ade83eb22360b6ca79e6e777955f1632716661.png",
         "price": 299,
@@ -391,7 +391,7 @@ export const food_list = [
         "category": "Chinese"
     },
     {
-        "_id": 34,
+        "_id": 35,
         "name": "Masala Puri",
         "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6_1vA3S3RaIvOPysgdQIq4i95de9LIMnH8A&s",
         "price": 199,
@@ -400,7 +400,7 @@ export const food_list = [
         "category": "South Indian"
     },
     {
-        "_id": 35,
+        "_id": 36,
         "name": "Fruit Tart",
         "img": "https://b.zmtcdn.com/data/dish_photos/5b6/853dd71cf9657eff1268bc11e98975b6.jpg",
         "price": 499,
@@ -409,12 +409,95 @@ export const food_list = [
         "category": "Dessert"
     },
     {
-        "_id": 36,
+        "_id": 37,
         "name": "Cold Coffee",
         "img": "https://b.zmtcdn.com/data/o2_assets/9c1dfe59035bbbcb1e06328f621917051632716659.png",
         "price": 299,
         "star": 4.7,
         "description": "Iced coffee blended with milk and sugar.",
         "category": "Beverage"
+    },
+    {
+        "_id": 38,
+        "name": "Cup Cake",
+        "img": "https://b.zmtcdn.com/data/o2_assets/d7791002acb6d04a9d57d9b76b9025cc1632716660.png",
+        "price": 140,
+        "star": 4.6,
+        "description": "Food provides essential nutrients for overall health and well-being",
+        "category": "Cake"
+    },
+    {
+        "_id": 39,
+        "name": "Vegan Cake",
+        "img": 'https://b.zmtcdn.com/data/dish_photos/1ee/fb36d633f4ae91ac72bb59bee438b1ee.jpg',
+        "price": 120,
+        "star": 4.5,
+        "description": "Food provides essential nutrients for overall health and well-being",
+        "category": "Cake"
+    },
+    {
+        "_id": 40,
+        "name": "Butterscotch Cake",
+        "img": 'https://b.zmtcdn.com/data/dish_photos/37d/7353188bf93b4d73ed7cc31e0c72237d.jpg',
+        "price": 200,
+        "star": 4.7,
+        "description": "Food provides essential nutrients for overall health and well-being",
+        "category": "Cake"
+    },
+    {
+        "_id": 41,
+        "name": "Sliced Cake",
+        "img": 'https://b.zmtcdn.com/data/pictures/6/20960736/ad1c2e5baa4bea771c6c6772a7cb01cb_o2_featured_v2.jpg?fit=around%7C108%3A108&crop=108%3A108%3B%2A%2C%2A',
+        "price": 150,
+        "star": 4.4,
+        "description": "Food provides essential nutrients for overall health and well-being",
+        "category": "Cake"
+    },
+    {
+        "_id": 42,
+        "name": "Rajma Chawal",
+        "img": "https://b.zmtcdn.com/data/pictures/5/20278665/09626c137b2bdfa7d084aa7b44eb16a0_o2_featured_v2.jpg?fit=around%7C108%3A108&crop=108%3A108%3B%2A%2C%2A",
+        "price": 179,
+        "star": 4.6,
+        "description": "Red kidney beans simmered in spices, served with basmati rice.",
+        "category": "Indian"
+    },
+    {
+        "_id": 43,
+        "name": "Dhokla",
+        "img": "https://b.zmtcdn.com/data/dish_photos/2b5/a7d9a93cfa8b6ec604f22de144d002b5.jpg",
+        "price": 99,
+        "star": 4.5,
+        "description": "Steamed savory cake made from fermented rice and chickpea batter.",
+        "category": "Indian"
+    },
+    {
+        "_id": 44,
+        "name": "Bhindi Masala",
+        "img": "https://b.zmtcdn.com/data/dish_photos/c3b/00f37147bad1de53e0d33904ac658c3b.png",
+        "price": 189,
+        "star": 4.4,
+        "description": "Stir-fried okra with onions and aromatic Indian spices.",
+        "category": "Indian"
+    },
+    {
+        "_id": 45,
+        "name": "Pav Bhaji",
+        "img": "https://b.zmtcdn.com/data/o2_assets/bf549b1fce240073d134bfe706afad9d1632716575.png",
+        "price": 149,
+        "star": 4.7,
+        "description": "Spiced mashed vegetables served with buttered buns.",
+        "category": "Indian"
+    },
+    {
+        "_id": 46,
+        "name": "Kadhi Pakora",
+        "img": "https://b.zmtcdn.com/data/dish_photos/275/0902803fdb8982d7e6a67fe7e415b275.jpg",
+        "price": 169,
+        "star": 4.6,
+        "description": "Gram flour dumplings simmered in spiced yogurt curry.",
+        "category": "Indian"
     }
+
+
 ]
