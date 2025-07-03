@@ -18,9 +18,8 @@ a{
 .app{
   @apply w-[100%] m-auto;
 }
-
-.logo{
-  @apply hidden md:block h-15 w-fit rounded-full;
+.logo {
+  @apply h-10 w-auto rounded-full;
 }
 
 .navbar{
@@ -32,7 +31,7 @@ a{
 }
 
 .navbar-menu{
-  @apply flex list-none gap-5 text-[#f4f1ea] sm:text-[12px] md:text-[18px] cursor-pointer;
+  @apply hidden md:flex md:block md:text-[18px] list-none gap-5 text-[#f4f1ea] cursor-pointer;
 }
 
 .navbar-right{
@@ -59,16 +58,29 @@ a{
   @apply flex flex-col items-start gap-[1.5vw];
 }
 
-.view-manu-button{
+.view-menu-button{
   @apply bg-[#f05a28] text-[#f4f1ea] font-bold py-2 px-4 rounded-full cursor-pointer hover:bg-[#49557e] hover:text-white transition-all duration-300;
 }
 
-.explore-menu{
-  @apply flex flex-col gap-5 justify-center items-center text-start;
+.explore-menu {
+  @apply flex flex-col gap-5 justify-center items-center px-4 sm:px-8 py-10;
 }
 
-.explore-menu-list{
-  @apply flex justify-between items-center gap-8 text-center m-5 sm:overflow-x-scroll;
+.explore-menu-list {
+  @apply flex justify-start sm:justify-center gap-6 w-full overflow-x-auto scroll-smooth px-4;
+}
+
+/* On small screens: show horizontal scroll, hide scrollbar if desired */
+.explore-menu-list::-webkit-scrollbar {
+  display: none;
+}
+
+.explore-menu-item {
+  @apply flex flex-col items-center min-w-[100px] sm:min-w-[120px] cursor-pointer;
+}
+
+.item-active {
+  @apply border border-solid border-[#f05a28] p-1 rounded-full;
 }
 
 .item-active{
@@ -81,6 +93,10 @@ a{
 
 .food-display-list{
   @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 w-full gap-8 p-5;
+}
+
+.food-item{
+  @apply flex flex-col items-center min-w-[100px] cursor-pointer;
 }
 
 .footer-content{

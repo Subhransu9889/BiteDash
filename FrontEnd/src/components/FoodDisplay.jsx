@@ -10,7 +10,7 @@ const FoodDisplay = ({category}) => {
     })
     const {food_list} = useContext(StoreContext)
   return <div className='food-display'>
-      <h2 className='text-[max(2vw,36px)] font-semibold text-center w-[40%]' data-aos='zoom-in'>Top dishes near you</h2>
+      <h2 className='text-[#262626] text-[max(2vw,36px)] font-semibold text-center sm:w-full md:w-[40%]' data-aos='zoom-in'>Top dishes near you</h2>
       <div className='food-display-list'>
           {food_list.map((item, index) => {
               if(category === 'all' || item.category === category){
