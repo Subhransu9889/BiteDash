@@ -501,3 +501,66 @@ export const food_list = [
 
 
 ]
+
+export const BrandData= [
+    {
+        "id": 1,
+        "name": "Domino's Pizza",
+        "description": "Delicious and hot pizzas with fresh ingredients.",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/7/74/Dominos_pizza_logo.svg"
+    },
+    {
+        "id": 2,
+        "name": "KFC",
+        "description": "Finger-licking good chicken meals and burgers.",
+        "logo": "//upload.wikimedia.org/wikipedia/sco/thumb/b/bf/KFC_logo.svg/300px-KFC_logo.svg.png?20170615210441"
+    },
+    {
+        "id": 3,
+        "name": "McDonald's",
+        "description": "Tasty burgers, fries, and refreshing drinks.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRjLWhWpx9PfbzysffLbMA_DK_8jawJAVHbw&s"
+    },
+    {
+        "id": 4,
+        "name": "Starbucks",
+        "description": "Premium coffee, beverages, and pastries.",
+        "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
+    },
+    {
+        "id": 5,
+        "name": "Subway",
+        "description": "Fresh and customizable sandwiches and salads.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoQsZ2KczTIWDJ5PXw8A-YKmGZ6UGVe-g5ZQ&s"
+    },
+    {
+        "id": 6,
+        "name": "Burger King",
+        "description": "Flame-grilled burgers and crispy fries.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi1YUsojqPKLq9Z4Ey3w_TEJ-XZHA4Y4Jjuw&s"
+    },
+    {
+        "id": 7,
+        "name": "Pizza Hut",
+        "description": "Cheesy pizzas with a variety of toppings.",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Pizza_Hut_classic_logo.svg"
+    },
+    {
+        "id": 8,
+        "name": "Dunkin' Donuts",
+        "description": "Tasty donuts and fresh brewed coffee.",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_9CdsgfMvgDHkx_dv2LJ1neXa8ClEpa1b1g&s"
+    },
+    {
+        "id": 9,
+        "name": "Taco Bell",
+        "description": "Mexican-inspired fast food like tacos and burritos.",
+        "logo": "https://brandlogos.net/wp-content/uploads/2016/11/taco-bell-logo-preview.png"
+    },
+    {
+        "id": 10,
+        "name": "Costa Coffee",
+        "description": "Quality coffee and delicious snacks.",
+        "logo": "https://1000logos.net/wp-content/uploads/2020/10/Costa-Coffee-Logo.png"
+    }
+]

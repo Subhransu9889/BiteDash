@@ -166,3 +166,19 @@ a{
 .app-download-icon{
   @apply w-[max(30vw,120px)] max-w-[180px] transition-all duration-300 cursor-pointer hover:transform hover:scale-[1.05];
 }
+
+.brand-display{
+  @apply h-fit py-5;
+}
+
+.brand-heading{
+  @apply text-3xl font-bold text-center p-2 mb-4;
+}
+
+.brands-list-display{
+  @apply grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 justify-center p-2;
+}
+
+.brands-list-item{
+  @apply bg-white shadow-md rounded-xl p-4 flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-lg;
+}

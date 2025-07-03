@@ -8,7 +8,7 @@ const Navbar = () => {
       <ul className='navbar-menu'>
           <li onClick={() => setPage('home')} className={page === 'home'? 'active': ''}>Home</li>
           <li onClick={() => setPage('menu')} className={page === 'menu'? 'active': ''}>Menu</li>
-          <li onClick={() => setPage('mobile-app')} className={page === 'mobile-app'? 'active': ''}>Mobile-app</li>
+          <li onClick={() => setPage('about')} className={page === 'about'? 'active': ''}>About</li>
           <li onClick={() => setPage('contact')} className={page === 'contact'? 'active': ''}>Contact</li>
       </ul>
       <div className='navbar-right'>
