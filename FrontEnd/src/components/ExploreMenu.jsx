@@ -7,7 +7,7 @@ const ExploreMenu = ({category, setCategory}) => {
     useEffect(() => {
         AOS.init({ duration: 1000, once: true});
     })
-  return <div className='explore-menu'>
+  return <div className='explore-menu' id='explore-menu-items'>
       <h1 className="text-[#262626] font-medium text-center text-3xl sm:text-4xl md:text-5xl xl:text-6xl">
           Explore our menu
       </h1>

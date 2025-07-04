@@ -6,9 +6,10 @@ import Home from "./pages/Home.jsx";
 import Cart from "./pages/Cart.jsx";
 import PlaceOrder from "./pages/PlaceOrder.jsx";
 import Footer from "./components/Footer.jsx";
+import About from "./components/About.jsx";
+import TermsAndCondition from "./components/TermsAndCondition.jsx";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -17,6 +18,8 @@ function App() {
               <Route path='/' element={<Home/>}></Route>
               <Route path='/cart' element={<Cart/>}></Route>
               <Route path='/order' element={<PlaceOrder/>}></Route>
+              <Route path='about' element={<About/>}></Route>
+              <Route path='/termsandconditions' element={<TermsAndCondition/>}></Route>
           </Routes>
       </div>
         <Footer/>

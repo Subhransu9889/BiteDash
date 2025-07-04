@@ -2,11 +2,12 @@ import React from 'react'
 import {faFacebook, faInstagram, faXTwitter} from "@fortawesome/free-brands-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import { Mail, MapPin, Phone } from 'lucide-react'
+import {Link} from "react-router-dom";
 
 function Footer() {
     return (
         <>
-            <div className='footer-content'>
+            <div className='footer-content' id='footer'>
                 <div className='footer-content-container'>
                     <div className='footer-upper-content'>
 
@@ -22,10 +23,10 @@ function Footer() {
                         <div>
                             <h2 className='footer-section-heading'>Company</h2>
                             <ul className='footer-list'>
-                                <li className='footer-list-item'>About Us</li>
+                                <a href='/about' className='footer-list-item'>About Us</a>
                                 <li className='footer-list-item'>Careers</li>
-                                <li className='footer-list-item'>Blog</li>
-                                <li className='footer-list-item'>Terms & Conditions</li>
+                                <Link to='/about#blog' className='footer-list-item'>Blog</Link><br/>
+                                <Link to='/termsandconditions' className='footer-list-item'>Terms & Conditions</Link>
                                 <li className='footer-list-item'>Privacy Policy</li>
                             </ul>
                         </div>

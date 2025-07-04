@@ -6,6 +6,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
 }
 body{
   min-height: 100vh;
@@ -23,7 +24,7 @@ a{
 }
 
 .navbar{
-  @apply pt-[20px] p-0 flex justify-between items-center w-[80%] m-auto;
+  @apply pt-[20px] p-0 flex justify-between items-center w-[80%] m-auto z-10;
 }
 
 .icon {
@@ -181,4 +182,92 @@ a{
 
 .brands-list-item{
   @apply bg-white shadow-md rounded-xl p-4 flex flex-col items-center transform transition duration-300 hover:scale-105 hover:shadow-lg;
+}
+
+.about-navbar{
+  @apply absolute top-0 left-0 w-full bg-transparent p-12 flex justify-between items-center z-50;
+}
+
+.about-navbar-menu{
+  @apply flex flex-col gap-3 md:flex-row md:space-x-6 text-white text-lg;
+}
+
+.about-head-text{
+  @apply absolute inset-0 flex flex-col justify-end gap-4 p-8 items-center bg-black/50 backdrop:blur-sm;
+}
+
+.assortment-section{
+  @apply text-center m-4;
+}
+
+.assortment-section-tag{
+  @apply bg-red-500 text-white px-4 py-1 rounded-full text-sm;
+}
+
+.assortment-section-heading{
+  @apply text-3xl font-bold mt-4;
+}
+
+.assortment-section-para{
+  @apply text-gray-600 mt-2 max-w-2xl mx-auto;
+}
+
+.blog-section{
+  @apply m-8 mb-4;
+}
+
+.blog-section-heading{
+  @apply text-4xl font-bold text-center;
+}
+
+.blog-section-para{
+  @apply text-gray-600 text-center mt-2 mb-6;
+}
+
+.blog-section-present{
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6;
+}
+
+.blog-present-div{
+  @apply bg-white p-4 rounded-2xl shadow-lg;
+}
+
+.blog-present-img{
+  @apply w-full h-48 object-cover rounded-lg;
+}
+
+.blog-present-heading{
+  @apply text-xl font-semibold mt-4;
+}
+
+.blog-present-para{
+  @apply text-gray-600 mt-2;
+}
+
+.terms-div{
+  @apply bg-white text-gray-800 px-6 py-12 max-w-5xl mx-auto;
+}
+
+.terms-heading{
+  @apply text-4xl font-bold mb-6 text-center;
+}
+
+.terms-para{
+  @apply text-sm text-gray-500 mb-8 text-center;
+}
+
+.terms-section{
+  @apply mb-8;
+}
+
+.terms-section-heading{
+  @apply text-2xl font-semibold mb-2;
+}
+
+.terms-section-list{
+  @apply list-disc list-inside space-y-1;
+}
+
+.terms-us-display{
+  @apply mt-3 flex items-center gap-3 text-gray-800 text-xl mb-2;
 }

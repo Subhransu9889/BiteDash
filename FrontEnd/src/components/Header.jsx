@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Navbar from "./Navbar.jsx";
+import LoginPopup from "./LoginPopup.jsx";
 
 const Header = () => {
+    const [showLogin, setShowLogin] = useState(false);
     return <>
+        {showLogin && <LoginPopup setShowLogin={setShowLogin}/>}
         <div className='min-h-screen w-full text-white relative'>
             <div className='absolute inset-0'>
                 <img
@@ -12,7 +15,7 @@ const Header = () => {
                     className='h-full w-full object-cover'
                 />
                 <div className='absolute inset-0'>
-                    <Navbar/>
+                    <Navbar setShowLogin={setShowLogin}/>
                 </div>
                 <div className='absolute inset-0 flex items-center max-w-[50%] max-h-[50%] top-[40%] bottom-[10%] left-[6vw]'>
                     <div className='header-content animate-slideIn'>
