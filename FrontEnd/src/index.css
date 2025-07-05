@@ -271,3 +271,35 @@ a{
 .terms-us-display{
   @apply mt-3 flex items-center gap-3 text-gray-800 text-xl mb-2;
 }
+
+.login-popup{
+  @apply absolute z-50 w-full h-full bg-black/50 backdrop:blur-sm grid justify-center items-center;
+}
+
+.login-popup-container{
+  @apply self-center w-[max(23vw,380px)] text-[#808080] bg-white flex flex-col gap-6 p-8 border-2 text-[14px];
+}
+
+.login-popup-title{
+  @apply flex justify-between items-center text-black;
+}
+
+.login-popup-inputs{
+  @apply flex flex-col gap-5;
+}
+
+.login-popup-input-fields{
+  @apply outline-none border-2 border-gray-300 p-2 rounded-md;
+}
+
+.login-popup-button{
+  @apply border-none p-4 rounded-md text-white bg-[#f05a28] text-[15px] cursor-pointer;
+}
+
+.login-popup-condition{
+  @apply flex items-start justify-center gap-2 -mt-3 text-gray-500;
+}
+
+.login-popup-condition-input{
+  @apply mt-1;
+}

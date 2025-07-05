@@ -1,8 +1,5 @@
 @import "tailwindcss";
 
-@theme{
-
-}
 
 @theme{
     --animate-slideIn : fadeIn  2.5s ease-out;
