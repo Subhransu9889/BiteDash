@@ -261,7 +261,7 @@ a{
 }
 
 .terms-section-heading{
-  @apply text-2xl font-semibold mb-2;
+  @apply text-2xl font-semibold mb-2 from-gray-400 to-[#f05a28] text-transparent bg-gradient-to-b bg-clip-text;
 }
 
 .terms-section-list{
@@ -270,6 +270,10 @@ a{
 
 .terms-us-display{
   @apply mt-3 flex items-center gap-3 text-gray-800 text-xl mb-2;
+}
+
+.terms-use-and-privacy-policy{
+  @apply text-red-500 cursor-pointer;
 }
 
 .login-popup{
@@ -302,4 +306,52 @@ a{
 
 .login-popup-condition-input{
   @apply mt-1;
+}
+
+.cart{
+  @apply mt-25;
+}
+
+.cart-header{
+  @apply flex flex-col justify-center items-center w-full pt-3 gap-2;
+}
+
+.cart-items-title{
+  @apply grid grid-cols-[1fr_1.5fr_1fr_1fr_1fr_0.5fr] items-center text-gray-600 font-[max(1vw,12px)] p-4;
+}
+
+.cart-items-item{
+  @apply mt-[10px] text-black;
+}
+
+.cart-items-remove-button{
+  @apply cursor-pointer;
+}
+
+.cart-bottom{
+  @apply flex flex-col-reverse md:flex-row justify-between mt-20 gap-[max(12vw,20px)] p-8;
+}
+
+.cart-total{
+  @apply flex flex-1 flex-col gap-5;
+}
+
+.cart-total-details{
+  @apply flex justify-between text-[#555] gap-2 p-3;
+}
+
+.cart-total-details-hr{
+  @apply border-b-[1px] border-gray-300 m-3;
+}
+
+.cart-total-button{
+  @apply border-none text-white bg-[#f05a28] p-4 w-[max(15vw,200px)] rounded-md cursor-pointer;
+}
+
+.cart-promocode{
+  @apply flex flex-1 flex-col gap-5;
+}
+
+.cart-promocode-input{
+  @apply flex mt-4 justify-between items-center outline-none border-2 border-gray-300 p-2 rounded-md;
 }
