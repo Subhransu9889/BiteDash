@@ -2,12 +2,14 @@ import React, {useContext} from 'react';
 import {StoreContext} from "../context/StoreContext.jsx";
 import Navbar from "../components/Navbar.jsx";
 import {assets} from "../assets/frontend_assets/assets.js";
+import {useNavigate} from "react-router-dom";
 
 const Cart = () => {
+  const navigate = useNavigate();
   const {cartItems, food_list, removeFromCart, getAllCartAmount} = useContext(StoreContext);
   return <>
     <div>
-      <div className='bg-gray-600 rounded-full flex flex-col items-center !pb-4'>
+      <div className='bg-[var(--color-gray-900)] rounded-full flex flex-col items-center !pb-4'>
         <Navbar/>
       </div>
       <div className='cart-header'>
@@ -58,15 +60,15 @@ const Cart = () => {
             <hr className='cart-total-details-hr'/>
             <div className='cart-total-details'>
               <p>Delivery Fee</p>
-              <p>₹ {99}</p>
+              <p>₹ {getAllCartAmount()>0? 99 : 0}</p>
             </div>
             <hr className='cart-total-details-hr'/>
             <div className='cart-total-details'>
               <b>Total</b>
-              <b>₹ {getAllCartAmount()+99}</b>
+              <b>₹ {getAllCartAmount()>0? getAllCartAmount()+99 : 0}</b>
             </div>
           </div>
-            <button className='cart-total-button'>Proceed to Checkout</button>
+            <button className='cart-total-button' onClick={() => navigate('/order')}>Proceed to Checkout</button>
         </div>
         <div className='cart-promocode'>
           <div>

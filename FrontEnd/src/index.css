@@ -355,3 +355,27 @@ a{
 .cart-promocode-input{
   @apply flex mt-4 justify-between items-center outline-none border-2 border-gray-300 p-2 rounded-md;
 }
+
+.place-order{
+  @apply flex items-start justify-between gap-12 mt-25 p-3 ml-15 md:ml-25 mr-15 md:mr-25;
+}
+
+.place-order-left{
+  @apply w-full max-w-[max(30%,500px)];
+}
+
+.place-order-title{
+  @apply text-2xl font-bold mb-12;
+}
+
+.place-order-input-fields{
+  @apply outline-[#f05a28] border-2 border-gray-300 p-2 rounded-md mb-4 w-full;
+}
+
+.multi-fields{
+  @apply flex gap-2;
+}
+
+.place-order-right{
+  @apply w-full max-w-[max(40%,500px)];
+}
