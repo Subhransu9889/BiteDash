@@ -51,7 +51,7 @@ const Cart = () => {
       </div>
       <div className='cart-bottom'>
         <div className='cart-total'>
-          <h2>Cart Total</h2>
+          <h2 className='text-2xl font-semibold'>Cart Total</h2>
           <div>
             <div className='cart-total-details'>
               <p>Subtotal</p>
@@ -68,7 +68,7 @@ const Cart = () => {
               <b>₹ {getAllCartAmount()>0? getAllCartAmount()+99 : 0}</b>
             </div>
           </div>
-            <button className='cart-total-button' onClick={() => navigate('/order')}>Proceed to Checkout</button>
+            <button className='cart-total-button' onClick={() => {getAllCartAmount()>0 && navigate('/order')}}>Proceed to Checkout</button>
         </div>
         <div className='cart-promocode'>
           <div>

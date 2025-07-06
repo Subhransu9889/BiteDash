@@ -29,7 +29,7 @@ const PlaceOrder = () => {
       </div>
       <div className='place-order-right'>
         <div className='cart-total'>
-          <h2>Cart Total</h2>
+          <h2 className='text-2xl font-semibold'>Cart Total</h2>
           <div>
             <div className='cart-total-details'>
               <p>Subtotal</p>
