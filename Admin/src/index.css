@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body{
+  min-height: 100vh;
+  background-color: #fcfcfc;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+hr{
+  border: none;
+  height: 1px;
+  background-color: #a9a9a9;
+}
+
+@media (max-width: 600px) {
+  .sidebar-option p{
+    display: none;
+  }
+}
+
+.app-content{
+  @apply flex;
+}
+
+.navbar{
+  @apply flex justify-between items-center p-2 pl-[4%] gap-4;
+}
+
+.navbar-left{
+  @apply flex flex-col items-center gap-1;
+}
+
+.logo{
+  @apply h-12 w-auto rounded-full;
+}
+
+.profile-image{
+  @apply w-12;
+}
+
+.sidebar{
+  @apply w-[20%] min-h-screen bg-gray-100 border-[1.5px] border-solid border-[#a9a9a9] border-t-0 p-2 text-[max(1vw,12px)];
+}
+
+.sidebar-options{
+  @apply flex flex-col pt-[50px] pl-[20%] gap-5;
+}
+
+.sidebar-option{
+  @apply flex items-center gap-3 border-b-[1px] border-solid border-[#a9a9a9] py-2 cursor-pointer;
+}
+
+.sidebar-option.active{
+  @apply bg-[#fff0ed] border-[#f05a28];
+}
+
+.add-catergory-price{
+  @apply flex gap-5;
+}
+
+.add{
+  @apply w-[70%] ml-[max(5vw,25px)] mt-[50px] text-[#6d6d6d] text-[16px];
+}
+
+.add-form{
+  @apply flex-col gap-5;
+}
+
+.add-img-upload{
+  @apply flex items-center gap-5;
+}
+
+.add-img-upload-icon{
+  @apply w-[120px];
+}
+
+.add-product-name, .add-product-description{
+  @apply w-[max(30%,280px)] flex flex-col gap-5 m-4;
+}
+
+.add-category-price{
+  @apply flex flex-col md:flex-row gap-2;
+}
+
+.add-category{
+  @apply w-[max(40%,300px)] flex items-center gap-2 m-4;
+}
+
+.add-price{
+  @apply w-[max(40%,300px)] flex items-center gap-2 m-4;
+}
+
+.add-button{
+  @apply max-w-[120px] border-none p-3 bg-black text-white rounded-md cursor-pointer;
+}
+
+.add-ratting{
+  @apply flex items-center gap-2 m-3 p-2;
+}
