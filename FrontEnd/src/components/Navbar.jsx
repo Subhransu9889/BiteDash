@@ -1,11 +1,18 @@
 import React, {useContext, useState} from 'react';
 import {assets} from "../assets/frontend_assets/assets.js";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import storeContext, {StoreContext} from "../context/StoreContext.jsx";
 
 const Navbar = ({setShowLogin}) => {
     const [page, setPage] = useState('home');
     const {getAllCartAmount, token, setToken} = useContext(StoreContext);
+    const navigate = useNavigate();
+    const logoutHandler = () => {
+        setToken('');
+        localStorage.removeItem('BiteDash_token');
+        navigate('/');
+        setShowLogin(true);
+    }
   return <div className='navbar'>
       <Link to='/'><img src={assets.logo} alt="logo" className='logo'/></Link>
       <ul className='navbar-menu'>
@@ -24,16 +31,16 @@ const Navbar = ({setShowLogin}) => {
               <button className='login-button' onClick={() => setShowLogin(true)}>Login</button>
           ) : (
               <div className='navbar-profile group relative'>
-                  <img src={assets.profile_icon} alt='profile' className='icon' />
+                  <img src={assets.profile_icon} alt='profile' className='h-9' />
                   <ul className='navbar-profile-dropdown'>
                       <li className='navbar-profile-dropdown-li'>
                           <img src={assets.bag_icon} alt='bag' className='icon' />
-                          <p>My Bag</p>
+                          <p className='hover:text-[#f05a28]'>My Bag</p>
                       </li>
                       <hr />
-                      <li className='navbar-profile-dropdown-li'>
+                      <li className='navbar-profile-dropdown-li' onClick={logoutHandler}>
                           <img src={assets.logout_icon} alt='logout' className='icon' />
-                          <p>Logout</p>
+                          <p className='hover:text-[#f05a28]'>Logout</p>
                       </li>
                   </ul>
               </div>

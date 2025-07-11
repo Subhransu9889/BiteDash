@@ -5,11 +5,11 @@ import "aos/dist/aos.css";
 import {assets} from "../assets/frontend_assets/assets.js";
 import {StoreContext} from "../context/StoreContext.jsx";
 
-const FoodItem = ({_id, name, img, price, star, description, category}) => {
+const FoodItem = ({_id, name, image, price, rating, description, category}) => {
     useEffect(() => {
         AOS.init({ duration: 1000, once: true});
     }, []);
-    const {cartItems, addToCart, removeFromCart} = useContext(StoreContext)
+    const {cartItems, addToCart, removeFromCart, url} = useContext(StoreContext)
   return (<>
           <div className='food-item' data-aos="fade-up">
               <div
@@ -17,7 +17,7 @@ const FoodItem = ({_id, name, img, price, star, description, category}) => {
                   className="bg-white p-5 rounded-2xl shadow-lg hover:shadow-2xl hover:bg-gray-100 transition-all duration-300 flex flex-col items-center  justify-between w-full max-w-xs h-[380px]"
               >
                   <img
-                      src={img}
+                      src={url+"/images/"+image}
                       alt={name}
                       className="w-fit h-50 object-cover rounded-full mb-4"
                   />
@@ -32,7 +32,7 @@ const FoodItem = ({_id, name, img, price, star, description, category}) => {
                               <img src={assets.add_icon_green} alt="add" className="size-4" onClick={() => addToCart(_id)}/>
                           </div>
                       }
-                  </div><span className='text-yellow-400'>⭐ {star}</span></div>
+                  </div><span className='text-yellow-400'>⭐ {rating}</span></div>
               </div>
           </div>
       </>
