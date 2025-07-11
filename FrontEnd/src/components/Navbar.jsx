@@ -5,7 +5,7 @@ import storeContext, {StoreContext} from "../context/StoreContext.jsx";
 
 const Navbar = ({setShowLogin}) => {
     const [page, setPage] = useState('home');
-    const {getAllCartAmount} = useContext(StoreContext);
+    const {getAllCartAmount, token, setToken} = useContext(StoreContext);
   return <div className='navbar'>
       <Link to='/'><img src={assets.logo} alt="logo" className='logo'/></Link>
       <ul className='navbar-menu'>
@@ -20,7 +20,24 @@ const Navbar = ({setShowLogin}) => {
               <Link to='/cart'><img src={assets.basket_icon} alt="basket" className='icon'/></Link>
               <div className={getAllCartAmount()>0? 'dot' : ''}></div>
           </div>
-          <button className='login-button' onClick={() => setShowLogin(true)}>Login</button>
+          {!token ? (
+              <button className='login-button' onClick={() => setShowLogin(true)}>Login</button>
+          ) : (
+              <div className='navbar-profile group relative'>
+                  <img src={assets.profile_icon} alt='profile' className='icon' />
+                  <ul className='navbar-profile-dropdown'>
+                      <li className='navbar-profile-dropdown-li'>
+                          <img src={assets.bag_icon} alt='bag' className='icon' />
+                          <p>My Bag</p>
+                      </li>
+                      <hr />
+                      <li className='navbar-profile-dropdown-li'>
+                          <img src={assets.logout_icon} alt='logout' className='icon' />
+                          <p>Logout</p>
+                      </li>
+                  </ul>
+              </div>
+          )}
       </div>
   </div>;
 };
