@@ -3,6 +3,7 @@ import cors from 'cors';
 import {connectDB} from "./config/db.js";
 import foodRouter from "./routes/FoodRoutes.js";
 import userRouter from "./routes/UserRoutes.js";
+import cartRouter from "./routes/CartRoutes.js";
 
 // app config
 const app = express();
@@ -20,6 +21,8 @@ connectDB();
 app.use('/api/food', foodRouter);
 app.use('/images', express.static('uploads'));
 app.use('/api/user', userRouter);
+
+app.use('/api/cart', cartRouter);
 
 app.get('/', (req, res) => {
     res.send('Hello From BiteDash Server');
