@@ -420,3 +420,20 @@ a{
   @apply animate-spin h-10 w-10 self-center border-[5px] border-solid border-[#bdbdbd] border-t-[#f05a28] rounded-full;
 }
 
+.my-orders{
+  @apply mt-25 pl-12;
+}
+
+.container{
+  @apply flex flex-col gap-5 mt-8;
+}
+
+.my-orders-order{
+  @apply grid grid-cols-[0.5fr_2fr_1fr_1fr_2fr_1fr] gap-8 text-[#454545] text-[14px] p-2 border-b border-[#f05a28] max-[900px]:grid-cols-[1fr_2fr_1fr] max-[900px]:gap-y-[5px] max-[900px]:text-[12px];
+}
+
+.my-orders-button{
+  @apply bg-[#f05a28] text-white p-1 rounded-md cursor-pointer max-[900px]:text-[10px];
+}
+
+

@@ -33,7 +33,7 @@ const Navbar = ({setShowLogin}) => {
               <div className='navbar-profile group relative'>
                   <img src={assets.profile_icon} alt='profile' className='h-9' />
                   <ul className='navbar-profile-dropdown'>
-                      <li className='navbar-profile-dropdown-li'>
+                      <li className='navbar-profile-dropdown-li' onClick={() => navigate('/myorders')}>
                           <img src={assets.bag_icon} alt='bag' className='icon' />
                           <p className='hover:text-[#f05a28]'>My Bag</p>
                       </li>

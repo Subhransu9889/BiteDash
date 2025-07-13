@@ -1,7 +1,8 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext, useEffect, useState} from 'react';
 import {StoreContext} from "../context/StoreContext.jsx";
 import Navbar from "../components/Navbar.jsx";
 import axios from "axios";
+import {useNavigate} from "react-router-dom";
 
 const PlaceOrder = () => {
   const {getAllCartAmount, token, food_list, cartItems, url} = useContext(StoreContext);
@@ -47,6 +48,14 @@ const PlaceOrder = () => {
       alert(res.data.message);
     }
   }
+  const navigate = useNavigate();
+  useEffect(() => {
+    if(!token){
+      navigate('/');
+    } else if(getAllCartAmount()===0){
+      navigate('/cart');
+    }
+  }, [token]);
   return <div>
     <div className='bg-[var(--color-gray-900)] rounded-full flex flex-col items-center !pb-4'>
       <Navbar/>

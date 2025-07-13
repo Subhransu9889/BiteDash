@@ -9,6 +9,7 @@ import Footer from "./components/Footer.jsx";
 import About from "./components/About.jsx";
 import TermsAndCondition from "./components/TermsAndCondition.jsx";
 import Verify from "./pages/Verify.jsx";
+import MyOrders from "./pages/MyOrders.jsx";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
               <Route path='about' element={<About/>}></Route>
               <Route path='/termsandconditions' element={<TermsAndCondition/>}></Route>
               <Route path='/verify' element={<Verify/>}></Route>
+              <Route path='/myorders' element={<MyOrders/>}></Route>
           </Routes>
       </div>
         <Footer/>
