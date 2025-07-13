@@ -13,6 +13,7 @@ const Navbar = ({setShowLogin}) => {
         navigate('/');
         setShowLogin(true);
     }
+    const [dropdown, setDropdown] = useState(false);
   return <div className='navbar'>
       <Link to='/'><img src={assets.logo} alt="logo" className='logo'/></Link>
       <ul className='navbar-menu'>
@@ -31,8 +32,8 @@ const Navbar = ({setShowLogin}) => {
               <button className='login-button' onClick={() => setShowLogin(true)}>Login</button>
           ) : (
               <div className='navbar-profile group relative'>
-                  <img src={assets.profile_icon} alt='profile' className='h-9' />
-                  <ul className='navbar-profile-dropdown'>
+                  <img src={assets.profile_icon} alt='profile' className='h-9' onClick={() => setDropdown(!dropdown)}/>
+                  <ul className={dropdown ? 'navbar-profile-dropdown-show' : 'navbar-profile-dropdown'}>
                       <li className='navbar-profile-dropdown-li' onClick={() => navigate('/myorders')}>
                           <img src={assets.bag_icon} alt='bag' className='icon' />
                           <p className='hover:text-[#f05a28]'>My Bag</p>

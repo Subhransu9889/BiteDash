@@ -10,12 +10,14 @@ import About from "./components/About.jsx";
 import TermsAndCondition from "./components/TermsAndCondition.jsx";
 import Verify from "./pages/Verify.jsx";
 import MyOrders from "./pages/MyOrders.jsx";
+import {ToastContainer} from 'react-toastify';
 
 function App() {
 
   return (
     <>
       <div className='app'>
+          <ToastContainer/>
           <Routes>
               <Route path='/' element={<Home/>}></Route>
               <Route path='/cart' element={<Cart/>}></Route>

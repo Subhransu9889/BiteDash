@@ -3,6 +3,7 @@ import Navbar from "../components/Navbar.jsx";
 import {StoreContext} from "../context/StoreContext.jsx";
 import axios from "axios";
 import {assets} from "../assets/frontend_assets/assets.js";
+import {toast} from "react-toastify";
 
 const MyOrders = () => {
     const [data, setData] = useState([]);
@@ -11,6 +12,7 @@ const MyOrders = () => {
     const fetchOrders = async () => {
         const res = await axios.post(url+'/api/order/userorders',{},{headers: {token: token}});
         setData(res.data.data);
+        toast('Updated Orders List and Status');
     }
 
     useEffect(() => {
@@ -18,6 +20,8 @@ const MyOrders = () => {
             fetchOrders();
         }
     }, [token]);
+
+    const [isBlinking, setIsBlinking] = useState(false);
   return <div>
       <div className='bg-[var(--color-gray-900)] rounded-full flex flex-col items-center !pb-4'>
           <Navbar/>
@@ -38,8 +42,8 @@ const MyOrders = () => {
                       })}</p>
                       <p>₹ {order.totalPrice}.00</p>
                       <p>Items: {order.foods.length}</p>
-                      <p><span className='text-[#f05a28]'>&#x25cf;</span><b className='font-md text-[#454545]'>{order.status}</b></p>
-                      <button className='my-orders-button'>Track Order</button>
+                      <p><span className='text-[#f05a28] animate-pulse'>&#x25cf;</span><b className='font-md text-[#454545]'>{order.status}</b></p>
+                      <button className='my-orders-button' onClick={fetchOrders}>Track Order</button>
                   </div>
               ))}
           </div>

@@ -404,8 +404,12 @@ a{
   @apply hidden absolute top-full right-0 -left-15 w-[120px] bg-transparent z-50 shadow-lg p-2 rounded cursor-pointer group-hover:block;
 }
 
+.navbar-profile-dropdown-show {
+  @apply block absolute top-full right-0 -left-15 w-[120px] bg-transparent z-50 shadow-lg p-2 rounded cursor-pointer;
+}
+
 .navbar-profile-dropdown-li {
-  @apply flex items-center p-1 gap-2 cursor-pointer
+  @apply flex items-center p-1 gap-2 cursor-pointer;
 }
 
 .icon{
