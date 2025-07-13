@@ -131,3 +131,32 @@ hr{
     display: none;
   }
 }
+
+.order-item{
+  @apply grid items-start gap-8 border-b-[1px] border-solid border-[#f05a28] p-5 mt-8 text-[14px] text-[#6d6d6d];
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr;
+}
+
+.order-item-food{
+  @apply font-semibold;
+}
+
+.order-item-name{
+  @apply font-bold mt-8 mb-1;
+}
+
+.order-item-address{
+  @apply mb-2;
+}
+
+@media (max-width: 600px) {
+  .order-item{
+    font-size: 12px;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    padding: 15px 8px;
+  }
+  .order-item select{
+    padding: 5px;
+    font-size: 12px;
+  }
+}

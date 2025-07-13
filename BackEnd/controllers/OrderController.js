@@ -96,7 +96,29 @@ const userOrders = async (req, res) => {
     }
 }
 
+// listing orders form admin panel
+const listOrders = async (req, res) => {
+    try{
+        const orders = await orderModel.find({});
+        res.status(200).json({success: true, data: orders});
+    } catch (error){
+        console.log(error);
+        res.status(400).json({success: false, message: 'User not found'});
+    }
+}
+
+// api for updating order status
+const updateOrderStatus = async (req, res) => {
+    try{
+        const order = await orderModel.findByIdAndUpdate(req.body.orderId, {status: req.body.status});
+        res.status(200).json({success: true, message: 'Order status updated successfully'});
+    } catch (error){
+        console.log(error);
+        res.status(400).json({success: false, message: 'Order not found'});
+    }
+}
+
 export {
-    placeOrder, verifyOrder, userOrders,
+    placeOrder, verifyOrder, userOrders, listOrders, updateOrderStatus,
 }
 
