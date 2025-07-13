@@ -412,3 +412,11 @@ a{
   @apply h-8;
 }
 
+.verify{
+  @apply min-h-[60vh] grid;
+}
+
+.spinner{
+  @apply animate-spin h-10 w-10 self-center border-[5px] border-solid border-[#bdbdbd] border-t-[#f05a28] rounded-full;
+}
+
