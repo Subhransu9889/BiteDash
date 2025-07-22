@@ -1,7 +1,6 @@
 import AOS from 'aos';
 import React, { useEffect, useState } from 'react'
 import "aos/dist/aos.css";
-import Footer from './Footer';
 import { useNavigate } from 'react-router-dom';
 
 function About() {
