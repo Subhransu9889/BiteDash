@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bitedash-app  # or any name
+    name: BiteDash  # or any name
     env: static
     staticPublishPath: build
     buildCommand: npm run build
