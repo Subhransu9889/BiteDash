@@ -2,7 +2,7 @@ services:
   - type: web
     name: BiteDash  # or any name
     env: static
-    staticPublishPath: build
+    staticPublishPath: dist
     buildCommand: npm run build
     routes:
       - type: rewrite
