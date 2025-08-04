@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from "./components/Navbar.jsx";
 import Sidebar from "./components/SIdebar.jsx";
-import {Route, Routes} from "react-router-dom";
+import {Route, Routes, Navigate} from "react-router-dom";
 import Add from "./pages/Add.jsx";
 import List from "./pages/List.jsx";
 import Orders from "./pages/Orders.jsx";
@@ -16,6 +16,7 @@ const App = () => {
     <div className='app-content'>
       <Sidebar/>
       <Routes>
+        <Route path='/' element={<Navigate to='/orders' />} />
         <Route path='/add' element={<Add url={url}/>}></Route>
         <Route path='/list' element={<List url={url}/>}></Route>
         <Route path='/orders' element={<Orders url={url}/>}></Route>
