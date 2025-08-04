@@ -23,7 +23,7 @@ function Footer() {
                         <div>
                             <h2 className='footer-section-heading'>Company</h2>
                             <ul className='footer-list'>
-                                <a href='/about' className='footer-list-item'>About Us</a>
+                                <Link to='/about' className='footer-list-item'>About Us</Link>
                                 <li className='footer-list-item'>Careers</li>
                                 <Link to='/about#blog' className='footer-list-item'>Blog</Link><br/>
                                 <Link to='/termsandconditions' className='footer-list-item'>Terms & Conditions</Link>
