@@ -18,9 +18,17 @@ const Navbar = ({setShowLogin}) => {
       <Link to='/'><img src={assets.logo} alt="logo" className='logo'/></Link>
       <ul className='navbar-menu'>
           <Link to='/' onClick={() => setPage('home')} className={page === 'home'? 'active': ''}>Home</Link>
-          <a href='#explore-menu-items' onClick={() => setPage('menu')} className={page === 'menu'? 'active': ''}>Menu</a>
-          <a href='/about' onClick={() => setPage('about')} className={page === 'about'? 'active': ''}>About</a>
-          <a href='#footer' onClick={() => setPage('contact')} className={page === 'contact'? 'active': ''}>Contact</a>
+          <a href='/#explore-menu-items' onClick={(e) => {
+              e.preventDefault();
+              setPage('menu');
+              document.getElementById('explore-menu-items')?.scrollIntoView({behavior: 'smooth'});
+          }} className={page === 'menu'? 'active': ''}>Menu</a>
+          <Link to='/about' onClick={() => setPage('about')} className={page === 'about'? 'active': ''}>About</Link>
+          <a href='/#footer' onClick={(e) => {
+              e.preventDefault();
+              setPage('contact');
+              document.getElementById('footer')?.scrollIntoView({behavior: 'smooth'});
+          }} className={page === 'contact'? 'active': ''}>Contact</a>
       </ul>
       <div className='navbar-right'>
           <img src={assets.search_icon} alt="search" className='icon'/>
