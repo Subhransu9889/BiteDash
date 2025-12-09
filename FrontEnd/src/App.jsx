@@ -11,8 +11,19 @@ import TermsAndCondition from "./components/TermsAndCondition.jsx";
 import Verify from "./pages/Verify.jsx";
 import MyOrders from "./pages/MyOrders.jsx";
 import {ToastContainer} from 'react-toastify';
+import Maintenance from './pages/Maintenance.jsx';
 
 function App() {
+  const MAINTENANCE_MODE = true; // Set to false to disable maintenance page
+
+  if (MAINTENANCE_MODE) {
+    return (
+      <>
+        <ToastContainer/>
+        <Maintenance/>
+      </>
+    );
+  }
 
   return (
     <>
