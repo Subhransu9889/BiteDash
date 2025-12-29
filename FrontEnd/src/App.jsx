@@ -14,7 +14,7 @@ import {ToastContainer} from 'react-toastify';
 import Maintenance from './pages/Maintenance.jsx';
 
 function App() {
-  const MAINTENANCE_MODE = true; // Set to false to disable maintenance page
+  const MAINTENANCE_MODE = false; // Set to false to disable maintenance page
 
   if (MAINTENANCE_MODE) {
     return (
