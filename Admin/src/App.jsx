@@ -8,7 +8,7 @@ import Orders from "./pages/Orders.jsx";
 import { ToastContainer } from 'react-toastify';
 
 const App = () => {
-  const url = 'http://localhost:3000';
+  const url = process.env.BACKEND_URL || 'http://localhost:5000';
   return <div>
     <ToastContainer/>
     <Navbar/>
